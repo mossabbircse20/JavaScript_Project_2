@@ -17,7 +17,7 @@
              clifford: '#da373d',
            },
            fontFamily: {
-             joti: ["Joti One","serif","Azeret Mono"],
+             joti: ["Joti One","serif"],
              sck: ["Slackey"],
            },
          }
@@ -32,11 +32,21 @@
     </header>
 
     <main class="flex-col justify-items-center content-center mx-[5%]">
-        <div class="result hidden bg-[#fff] flex flex-wrap justify-center items-center bg-cover border-none rounded-[2rem] mx-[20%] h-[340px] w-[340px] sm:h-[400px] sm:w-[400px] md:h-[500px] md:w-[500px] xl:h-[700px] xl:w-[700px] mt-[3rem]">
-            <h1 class="text-[1.5rem] text-center p-[30px] md:text-[2.5rem] xl:text-[2.5rem]">Congratulation! You win</h1>
-            <button class="newGameBtn h-[3rem] bg-[#2E8A99] p-[10px] rounded-[10px] text-white hover:border-[2px] border-[#0E2954] hover:text-black ">New Game</button>
+        <div class="result hidden bg-[#fff] flex flex-wrap justify-center items-center bg-cover border-none rounded-[2rem] mx-[10%] h-[340px] w-[340px] sm:h-[400px] sm:w-[400px] md:h-[500px] md:w-[500px] xl:h-[700px] xl:w-[700px] mt-[3rem]">
+            <h1 class="result-msg text-[1.5rem] text-center p-[30px] md:text-[2.5rem] xl:text-[2.5rem]"></h1>
+            <!-- <div id="score" class="flex flex-wrap justify-center items-center text-lg sm:text-6xl gap-6 sm:gap-12 mt-8 ">
+              <div class="flex-col justify-items-center content-center p-[10px] font-bold">
+                <h1>Circle Score</h1>
+                <p id="cScore" class="text-4x1 sm:text-6x1">0</p>
+              </div>
+              <div class="flex-col justify-items-center content-center p-[10px] font-bold">
+                <h1>Triangle Score</h1>
+                <p id="tScore" class="text-4x1 sm:text-6x1">0</p>
+              </div>
+            </div> -->
+            <button class="newGameBtn h-[3rem] bg-[#2E8A99] p-[10px] rounded-[10px] text-black hover:border-[2px] border-[#0E2954] hover:text-white ">New Game</button>
         </div>
-        <div class="game-board bg-[url(./assets/circle_triangle_bg.png)] flex flex-wrap justify-center items-center bg-cover border-none rounded-[2rem] mx-[20%] h-[340px] w-[340px]  md:h-[500px] md:w-[500px] xl:h-[700px] xl:w-[700px] mt-[3rem]">
+        <div class="game-board bg-[url(./assets/circle_triangle_bg.png)] flex flex-wrap justify-center items-center bg-cover border-none rounded-[2rem] mx-[10%] h-[340px] w-[340px]  md:h-[500px] md:w-[500px] xl:h-[700px] xl:w-[700px] mt-[3rem]">
             <div class="box flex flex-wrap gap-2 justify-center items-center h-[300px] w-[300px] md:h-[450px] md:w-[450px] xl:h-[650px] xl:w-[650px]">
                 <button id="button" class="h-[80px] w-[80px] bg-[#1F6E8C] rounded-[1rem] md:h-[130px] md:w-[130px] xl:h-[195px] xl:w-[195px]"></button>
                 <button id="button" class="h-[80px] w-[80px] bg-[#1F6E8C] rounded-[1rem] md:h-[130px] md:w-[130px] xl:h-[195px] xl:w-[195px]"></button>
